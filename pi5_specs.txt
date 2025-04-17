@@ -1,0 +1,161 @@
+Raspberry Pi 5 Specifications
+==============================
+
+--- General System Information ---
+
+Linux raspberrypi 6.6.74+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.6.74-1+rpt1 (2025-01-27) aarch64 GNU/Linux
+
+--- CPU Information ---
+
+processor	: 0
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+processor	: 1
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+processor	: 2
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+processor	: 3
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+Revision	: c04170
+Serial		: 98017fe37eed8b14
+Model		: Raspberry Pi 5 Model B Rev 1.0
+
+--- Memory Specifications ---
+
+MemTotal:        4142080 kB
+MemFree:         2998848 kB
+MemAvailable:    3619616 kB
+Buffers:           33328 kB
+Cached:           649360 kB
+SwapCached:            0 kB
+Active:           645184 kB
+Inactive:         354832 kB
+Active(anon):     345344 kB
+Inactive(anon):        0 kB
+Active(file):     299840 kB
+Inactive(file):   354832 kB
+Unevictable:       10432 kB
+Mlocked:              16 kB
+SwapTotal:        524272 kB
+SwapFree:         524272 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               608 kB
+Writeback:             0 kB
+AnonPages:        327968 kB
+Mapped:           190880 kB
+Shmem:             28016 kB
+KReclaimable:      23504 kB
+Slab:              56848 kB
+SReclaimable:      23504 kB
+SUnreclaim:        33344 kB
+KernelStack:        4880 kB
+PageTables:        10528 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2595312 kB
+Committed_AS:    1670368 kB
+VmallocTotal:   68180246528 kB
+VmallocUsed:       19248 kB
+VmallocChunk:          0 kB
+Percpu:             1280 kB
+CmaTotal:          65536 kB
+CmaFree:           49056 kB
+
+--- Storage Information ---
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           405M  5.8M  399M   2% /run
+/dev/mmcblk0p2   58G  6.6G   49G  12% /
+tmpfs           2.0G  336K  2.0G   1% /dev/shm
+tmpfs           5.0M   48K  5.0M   1% /run/lock
+/dev/mmcblk0p1  510M   68M  443M  14% /boot/firmware
+tmpfs           405M  176K  405M   1% /run/user/1000
+
+--- GPU Specifications ---
+
+2024/09/23 14:02:56 
+Copyright (c) 2012 Broadcom
+version 26826259 (release) (embedded)
+
+--- Network Interface Information ---
+
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether d8:3a:dd:bf:d5:f9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 106  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 843  bytes 77129 (75.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 843  bytes 77129 (75.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.218.125  netmask 255.255.255.0  broadcast 192.168.218.255
+        inet6 2401:4900:628b:db4f:5486:d96f:b869:5714  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::7c5a:9142:44af:2fe0  prefixlen 64  scopeid 0x20<link>
+        ether d8:3a:dd:bf:d5:fa  txqueuelen 1000  (Ethernet)
+        RX packets 2494  bytes 2229813 (2.1 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2942  bytes 412258 (402.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+--- Operating System Details ---
+
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 12 (bookworm)
+Release:	12
+Codename:	bookworm
+
+--- USB Peripheral Support ---
+
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+--- Temperature and Voltage ---
+
+temp=48.8'C
+volt=0.7200V
+
+--- Full Hardware Overview ---
+
