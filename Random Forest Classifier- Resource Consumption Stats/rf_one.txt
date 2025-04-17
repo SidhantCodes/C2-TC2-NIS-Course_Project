@@ -1,0 +1,135 @@
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃                       ENTERPRISE NETWORK SECURITY REPORT                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTIVE SUMMARY
+─────────────────────────────────────────────────────────────────────────────────────
+Report Generated: 2025-04-17 10:05:50
+Total Network Flows Analyzed: 13,500
+Flows Rejected by Security Controls: 0 (0.0%)
+Flows Processed for Deep Analysis: 13,500 (100.0%)
+
+Critical Security Issues: 265
+High Severity Issues: 3,467
+Medium Severity Issues: 3,153
+
+SECURITY RULE ENFORCEMENT DETAILS
+─────────────────────────────────────────────────────────────────────────────────────
+
+■ Invalid Header Length (High)
+  Flows Affected: 5,788
+  Description: Malformed packet headers detected (possible IDS evasion)
+  MITRE ATT&CK: T1562.003
+  CVE Reference: CVE-2021-44228
+  
+  Example Violations:
+      No examples found
+
+■ Port Scanning Pattern (Medium)
+  Flows Affected: 2,825
+  Description: High-speed port scanning activity detected
+  MITRE ATT&CK: T1046
+  CVE Reference: N/A
+  
+  Example Violations:
+      No examples found
+
+■ Suspicious Data Transfer Rate (High)
+  Flows Affected: 1,179
+  Description: Abnormally high data transfer rate (data exfiltration)
+  MITRE ATT&CK: T1048
+  CVE Reference: N/A
+  
+  Example Violations:
+      No examples found
+
+■ Unsecured HTTP Traffic (Medium)
+  Flows Affected: 657
+  Description: Clear-text HTTP traffic detected (NIST SC-8, SC-13 compliance)
+  MITRE ATT&CK: T1071.001
+  CVE Reference: N/A
+  
+  Example Violations:
+      No examples found
+
+■ SQL Injection Pattern (Critical)
+  Flows Affected: 186
+  Description: HTTP traffic with suspicious SQL injection patterns
+  MITRE ATT&CK: T1190
+  CVE Reference: CVE-2020-13379
+  
+  Example Violations:
+      No examples found
+
+■ RST/FIN Flood Pattern (Critical)
+  Flows Affected: 71
+  Description: TCP RST/FIN flood pattern detected (CIS Control 13)
+  MITRE ATT&CK: T1499.002
+  CVE Reference: N/A
+  
+  Example Violations:
+      No examples found
+
+■ Command Injection Pattern (Critical)
+  Flows Affected: 59
+  Description: HTTP traffic with command delimiter patterns
+  MITRE ATT&CK: T1059.004
+  CVE Reference: CVE-2021-42013
+  
+  Example Violations:
+      No examples found
+
+■ Covert Channel Pattern (High)
+  Flows Affected: 5
+  Description: Long-duration low-rate covert channel detected
+  MITRE ATT&CK: T1071.001
+  CVE Reference: N/A
+  
+  Example Violations:
+      No examples found
+
+■ XSS Attack Pattern (High)
+  Flows Affected: 4
+  Description: HTTP traffic with script injection indicators
+  MITRE ATT&CK: T1059.007
+  CVE Reference: CVE-2021-44228
+  
+  Example Violations:
+      No examples found
+
+MACHINE LEARNING MODEL PERFORMANCE
+─────────────────────────────────────────────────────────────────────────────────────
+Model Accuracy on Approved Traffic: 98.8%
+Total Benign Flows Identified: 319
+Total Attack Flows Detected: 13,181
+
+Attack Type Distribution:
+  DDoS Attacks: 9,867
+  DoS Attacks: 2,330
+  Reconnaissance: 89
+  Injection Attacks: 3
+  Malware Traffic: 747
+  Other Attack Types: 145
+
+
+Stage 2 Autoencoder Analysis:
+  Uncertain Flows Sent to Autoencoder: 167
+  Anomalies Detected by Autoencoder: 167
+
+Top Attack Categories:
+  DDoS-ICMP_Flood: 2,078 flows
+  DDoS-UDP_Flood: 1,605 flows
+  DDoS-TCP_Flood: 1,281 flows
+  DDoS-SYN_Flood: 1,218 flows
+  DDoS-PSHACK_Flood: 1,136 flows
+
+TREND ANALYSIS
+─────────────────────────────────────────────────────────────────────────────────────
+Key Observations:
+• Highest security rule violation: Invalid Header Length with 5,788 flows
+• Secure HTTPS traffic (747 flows) exceeds insecure HTTP (657 flows)
+• High-rate traffic flows detected: 2,718 flows with rate >1000 pps
+
+For detailed traffic analytics and a complete breakdown of all blocked traffic, 
+refer to the exported 'security_processed_results.csv' file.
